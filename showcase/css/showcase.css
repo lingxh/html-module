@@ -1,0 +1,82 @@
+.lx-showcase * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 主容器，居中显示 */
+.lx-showcase { 
+    --list-color: aliceblue;
+    --main-font-size: 1rem;
+    --theme-color: blueviolet;
+    font-size: var(--main-font-size);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lx-showcase > ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/*li padding-bottom是为了给底部按钮预留空间*/
+.lx-showcase > ul > li {
+    position: relative;
+    width: 20vw;
+    max-width: 300px;
+    padding: 1rem;
+    padding-bottom: 3.5rem;
+    list-style: none;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+    border-radius: 10px;
+    background-color: var(--list-color);
+}
+
+.lx-showcase .icon {
+    display: block;
+    font-size: calc(var(--main-font-size) * 2);
+    color: var(--theme-color);
+    margin-bottom: 1rem;
+}
+
+.lx-showcase > ul > li > h2 {
+    margin-bottom: 1rem;
+}
+
+.lx-showcase > ul > li > p {
+    
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #4c4d56;
+}
+
+.lx-showcase .bottom-hyperlink{
+    position: absolute;
+    width: calc(100% - 2rem);
+    bottom: 1rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1250px) {
+    .lx-showcase > ul > li {
+        width: 40vw;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .lx-showcase > ul > li {
+        width: 90vw;
+        max-width: 100%;
+    }
+}
