@@ -65,8 +65,12 @@
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    transition: box-shadow 0.3s;
 }
 
+.lx-showcase .bottom-hyperlink:hover{
+    box-shadow: 0 2px 8px rgb(160, 110, 207);
+}
 @media screen and (max-width: 1250px) {
     .lx-showcase > ul > li {
         width: 40vw;
