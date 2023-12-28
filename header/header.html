@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .bg-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="lx-header">
+        <nav>
+            <img src="./logo.png" alt="">
+            <ul id="lx-header-ul">
+                <div class="list-logo">
+                    <img src="./logo.png" alt="">
+                    <i class="ri-close-line" id="lx-header-close-list"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="nav-right">
+                <i class="ri-search-line" id="lx-header-show-search"></i>
+                <i class="ri-user-line" id="lx-header-show-login"></i>
+                <i class="ri-menu-line" id="lx-header-show-list"></i>
+                <a href="#" class="nav-button">
+                    <p>Get Started</p>
+                    <div class="nav-button-animation-left"></div>
+                    <div class="nav-button-animation-right"></div>
+                </a>
+            </div>
+        </nav>
+        <div class="offcanvas-backdrop" id="lx-header-offcanvas-backdrop"></div>
+        <div class="search">
+            <div class="search-container">
+                <i class="ri-close-line" id="lx-header-close-search"></i>
+                <div class="search-bar">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login-container">
+                <i class="ri-close-line" id="lx-header-close-login"></i>
+                <div class="login-bar">
+                    <h2>Login</h2>
+                    <div class="login-input">
+                        <i class="ri-user-line"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="login-input">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="login-text">
+                        <a href="#">Sign up<a>
+                                <a href="#">Reset Password</a>
+                    </div>
+
+                    <a href="#" class="login-button">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+<script src="./js/header.js"></script>
+
+</html>
